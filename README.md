@@ -79,4 +79,21 @@ One way to do this is to create a utility that compiles the new syntax to just l
     - Similar to how Shine does it.
 - [ ] Decorators!
 - [ ] Better stdlib with optional stdxlib
+- [ ] Elvis operator
+	```lua
+	local thing = getThing() ?: error("No thing!!")
+	```
+- [ ] Scope functions, including `with`
+	- `with`
+	```lua
+	with(object) do
+		property = true
+	end
+	```
+	- scope functions (kotlin inspired)
+	```lua
+	doThing() also do log(self) end
+	-- or
+	doThing() let do thing -> thing.property = true end
+	```
 
